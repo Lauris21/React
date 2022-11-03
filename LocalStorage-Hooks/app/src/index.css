@@ -1,0 +1,35 @@
+ * {
+    margin: 0;
+    padding: 0;
+ }
+
+ header {
+    display: flex;
+    justify-content: center;
+ }
+
+ .color-dark, .color-light {
+    height: 100vh;
+ }
+
+ .color-dark {
+    background-color: rgb(24, 24, 25);
+    color: rgb(223, 223, 223);
+ }
+
+ .color-light {
+    background-color: rgb(223, 223, 223);
+    color: rgb(24, 24, 25);
+ }
+
+ button {
+    border-radius: 3px;
+    border: 1px solid transparent;
+    margin-top: 1.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+ }
+ 
+ button:hover {
+    transform: scale(1.1);
+ }
