@@ -3,10 +3,10 @@ import { createContext, useCallback, useEffect, useState } from "react";
 
 export const ThemeContext = createContext({
     theme: "dark",
-    toogleTheme: () => null,
+    toggleTheme: () => null,
 })
 
-export const ThemeContextProvider = ({ children, }) => {
+export const ThemeContextProvider = ({ children }) => {
 
     const [theme, setTheme] = useState(
         () => (localStorage.getItem("theme")) || "dark"
@@ -18,7 +18,8 @@ export const ThemeContextProvider = ({ children, }) => {
 
     useEffect(() => {
         localStorage.setItem("theme", theme);
-    }, [theme])
+    }, [theme]);
+
     return (
         <ThemeContext.Provider 
             value={{

@@ -4,10 +4,10 @@ import { ThemeContext } from "../context/ThemeContext";
 
 const ThemeSwitcher = () => {
     
-    const { theme, toogleTheme } = useContext(ThemeContext)
+    const { theme, toggleTheme } = useContext(ThemeContext)
 
     return (
-        <button className="themeButton" type="button" onClick={toogleTheme}>
+        <button className="themeButton" type="button" onClick={toggleTheme}>
             {theme === "dark" ? "🔲" : "🔳"}
         </button>
     )
