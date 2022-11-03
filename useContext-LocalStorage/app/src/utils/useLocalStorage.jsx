@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-const UseLocalStorage = (keyname, defaultValue) => {
+export const useLocalStorage = (keyname, defaultValue) => {
 
     const [storeValue, setStoreValue] = useState(() => {
         try {
@@ -24,5 +24,3 @@ const UseLocalStorage = (keyname, defaultValue) => {
     }
     return [storeValue, setValue]
 }
-
-export default UseLocalStorage
