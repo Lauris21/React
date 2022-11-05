@@ -49,17 +49,17 @@ const Footer = () => {
           </ul>
           <ul className="store">
             <li>
-              <a href="#">
+              <a href="#" className="appStore">
                 <Image src={appStore} alt="app Store" />
               </a>
             </li>
             <li>
-              <a href="#">
+              <a href="#" className="playStore">
                 <Image src={playStore} alt="play Store" />
               </a>
             </li>
             <li>
-              <a href="#">
+              <a href="#" className="windowStore">
                 <Image src={windowsStore} alt="windows Store" width="135px" />
               </a>
             </li>

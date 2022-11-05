@@ -1,0 +1,62 @@
+.buttonPop {
+    color: black;
+    border: none;
+    text-align: left;
+    background-color: initial;
+}
+
+.popUp {
+    width: 700px;
+    margin: auto;
+    
+}
+
+.popUp > figure {
+    width: 700px;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    padding: 1rem;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.769) 0px 22px 70px 4px;
+}
+
+.popUp > figure > div {
+    backdrop-filter: blur(0.4rem) brightness(40%);
+    display: flex;
+    border-radius: 20px;
+}
+
+.popUp > figure > div > img {
+    width: 200px;
+    border: 1px solid whitesmoke;
+    border-radius: 20px 0px 0px 20px;
+}
+
+.popUp > figure > div > section {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 1.5rem;
+}
+
+.popUp > figure > div > section > p {
+    color: whitesmoke;
+}
+
+.buttonClose {
+    cursor: pointer;
+    position: absolute;
+    display: block;
+    padding: 2px 5px;
+    line-height: 20px;
+    right: -10px;
+    top: -10px;
+    font-size: 24px;
+    background: #ffffff;
+    border-radius: 18px;
+    border: 1px solid #cfcece;
+    color: rgb(41, 41, 41);
+    border: 1px solid rgb(41, 41, 41);
+  }
+
