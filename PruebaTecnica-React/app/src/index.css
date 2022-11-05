@@ -10,6 +10,7 @@
 
 main {
     background-color: rgb(246, 246, 246);
+    min-height: 71vh;
 }
 
 a {
@@ -22,10 +23,9 @@ li {
     display: flex;
 }
 
-main > h1 {
+.popular {
     background: rgb(0,0,0);
     background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(46,45,45,1) 21%, rgba(61,61,60,1) 43%, rgba(65,65,64,1) 63%, rgba(45,45,44,1) 100%);
-    font-size: 1.7rem;
     height: 6vh;
     display: flex;
     place-items: center;
@@ -33,7 +33,14 @@ main > h1 {
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 
+.popular > h1 {
+    font-size: 1.7rem;
+}
+
 p {
     color: black;
 }
 
+.error {
+    color: black;
+}

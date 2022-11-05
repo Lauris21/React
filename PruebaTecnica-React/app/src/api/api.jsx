@@ -4,6 +4,6 @@ export const getData = async () => {
     const dataJson = await data.json();
     return dataJson;
   } catch (error) {
-    return Error(error);
+    return false;
   }
 };

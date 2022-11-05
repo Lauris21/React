@@ -4,7 +4,6 @@ import Image from '../image';
 import PopupDiv from '../popUP/Popup';
 
 const Gallery = ({ item }) => {
-  console.log(PopupDiv);
   return (
     <>
       {item ? (

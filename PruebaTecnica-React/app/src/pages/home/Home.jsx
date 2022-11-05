@@ -26,7 +26,7 @@ const Home = () => {
                 <h3>MOVIES</h3>
               </Link>
             </figure>
-            <p>Popular series</p>
+            <p>Popular movies</p>
           </section>
         </div>
       </div>
