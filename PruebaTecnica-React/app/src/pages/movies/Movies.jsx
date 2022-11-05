@@ -2,7 +2,7 @@ import './movies.css';
 
 import { useState, useEffect } from 'react';
 
-import Gallery from './../../components/Gallery';
+import Gallery from './../../components/gallery/Gallery';
 
 import { getData } from '../../api/api';
 import { filtererdData } from '../../components/FilteredData';

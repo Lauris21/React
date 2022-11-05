@@ -1,5 +1,7 @@
-import Image from './image';
-import PopupDiv from './popUP/Popup';
+import './gallery.css';
+
+import Image from '../image';
+import PopupDiv from '../popUP/Popup';
 
 const Gallery = ({ item }) => {
   console.log(PopupDiv);

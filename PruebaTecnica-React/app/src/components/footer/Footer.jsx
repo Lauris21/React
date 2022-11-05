@@ -1,12 +1,14 @@
+import './footer.css';
+
 import { Link } from 'react-router-dom';
 
-import Image from './Image';
-import face from './../../assets/social/facebook-white.svg';
-import twitter from './../../assets/social/twitter-white.svg';
-import instagram from './../../assets/social/instagram-white.svg';
-import appStore from './../../assets/store/app-store.svg';
-import playStore from './../../assets/store/play-store.svg';
-import windowsStore from './../../assets/store/windows-store.svg';
+import Image from '../Image';
+import face from '../../../assets/social/facebook-white.svg';
+import twitter from '../../../assets/social/twitter-white.svg';
+import instagram from '../../../assets/social/instagram-white.svg';
+import appStore from '../../../assets/store/app-store.svg';
+import playStore from '../../../assets/store/play-store.svg';
+import windowsStore from '../../../assets/store/windows-store.svg';
 
 const Footer = () => {
   return (

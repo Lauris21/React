@@ -1,0 +1,56 @@
+footer {
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgb(69, 69, 69) 0%, rgb(50, 50, 50) 21%, rgb(40, 40, 40) 43%, rgb(50, 50, 50) 63%, rgb(69, 69, 69) 100%);
+    height: 30vh;
+    padding: 1.5rem 6rem;
+}
+
+footer > ul {
+    display: flex;
+}
+footer > ul > li > a {
+    color: rgb(246, 246, 246);
+    padding: 0 1rem;
+}
+
+.li1, .li2, .li3, .li4, .li5 {
+    border-right: 1px solid rgb(246, 246, 246);
+}
+
+footer > p {
+    padding: 1rem;
+    color: rgb(246, 246, 246);
+    font-size: 0.9rem;
+}
+
+footer > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2.5rem 0.5rem;
+}
+
+.logos {
+    place-self: center;
+}
+
+.logos > ul {
+    padding: 1rem;
+}
+.logos > li > a > img{
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+.logos > li > a {
+    padding: 0 1rem;
+}
+
+.store {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.windowStore {
+    width: 120px;
+}

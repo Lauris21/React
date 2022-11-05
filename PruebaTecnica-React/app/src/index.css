@@ -12,14 +12,6 @@ main {
     background-color: rgb(246, 246, 246);
 }
 
-header {
-    display: flex;
-    justify-content: space-between;
-    height: 7vh;
-    padding: 1rem 7rem;
-    background-image: linear-gradient(180deg, #0097FE 0, #0089FE 25%, #007AFF 50%, #016FFF 75%, #0069FF 100%);
-}
-
 a {
     text-decoration: none;
     place-self: center;
@@ -30,20 +22,6 @@ li {
     display: flex;
 }
 
-.freeTrial {
-    background: rgb(0,0,0);
-    background: linear-gradient(180deg, rgb(69, 69, 69) 0%, rgb(50, 50, 50) 21%, rgb(31, 31, 31) 43%, rgb(50, 50, 50) 63%, rgb(69, 69, 69) 100%);
-    padding: 0 1rem
-}
-
-header > ul {
-    display: flex;
-    gap: 3rem;
-}
-
-header > h1 {
-    font-size: 2.2rem;
-}
 main > h1 {
     background: rgb(0,0,0);
     background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(46,45,45,1) 21%, rgba(61,61,60,1) 43%, rgba(65,65,64,1) 63%, rgba(45,45,44,1) 100%);
@@ -57,80 +35,5 @@ main > h1 {
 
 p {
     color: black;
-}
-
-figure > img {
-    filter: opacity(1);
-    height: 240px;
-}
-
-figure > img:hover {
-    filter: opacity(0.7);
-    border: 0.5px solid white;
-}
-
-figure > a > img {
-    filter: opacity(1);
-}
-
-figure > a:hover {
-    filter: opacity(0.7);
-    border: 0.5px solid white;
-}
-footer {
-    background: rgb(0,0,0);
-    background: linear-gradient(180deg, rgb(69, 69, 69) 0%, rgb(50, 50, 50) 21%, rgb(40, 40, 40) 43%, rgb(50, 50, 50) 63%, rgb(69, 69, 69) 100%);
-    height: 30vh;
-    padding: 1.5rem 6rem;
-}
-
-footer > ul {
-    display: flex;
-}
-footer > ul > li > a {
-    color: rgb(246, 246, 246);
-    padding: 0 1rem;
-}
-
-.li1, .li2, .li3, .li4, .li5 {
-    border-right: 1px solid rgb(246, 246, 246);
-}
-
-footer > p {
-    padding: 1rem;
-    color: rgb(246, 246, 246);
-    font-size: 0.9rem;
-}
-
-footer > div {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 2.5rem 0.5rem;
-}
-
-.logos {
-    place-self: center;
-}
-
-.logos > ul {
-    padding: 1rem;
-}
-.logos > li > a > img{
-    width: 2.5rem;
-    height: 2.5rem;
-}
-
-.logos > li > a {
-    padding: 0 1rem;
-}
-
-.store {
-    display: flex;
-    gap: 1.5rem;
-}
-
-.windowStore {
-    width: 120px;
 }
 

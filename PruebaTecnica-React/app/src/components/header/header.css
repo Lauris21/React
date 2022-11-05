@@ -1,0 +1,22 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    height: 7vh;
+    padding: 1rem 7rem;
+    background-image: linear-gradient(180deg, #0097FE 0, #0089FE 25%, #007AFF 50%, #016FFF 75%, #0069FF 100%);
+}
+
+.freeTrial {
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgb(69, 69, 69) 0%, rgb(50, 50, 50) 21%, rgb(31, 31, 31) 43%, rgb(50, 50, 50) 63%, rgb(69, 69, 69) 100%);
+    padding: 0 1rem
+}
+
+header > ul {
+    display: flex;
+    gap: 3rem;
+}
+
+header > h1 {
+    font-size: 2.2rem;
+}
