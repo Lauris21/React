@@ -1,0 +1,14 @@
+.movieGallery > figure {
+    width: 10rem;
+}
+
+.movieGallery > figure > img {
+    width: 10rem;
+}
+
+.movieGallery {
+    padding: 2.5rem 7rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    gap: 2rem 0;
+}
