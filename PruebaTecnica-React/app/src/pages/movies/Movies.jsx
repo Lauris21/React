@@ -12,6 +12,7 @@ import Error from '../../components/error';
 const Movies = () => {
   const [movies, setMovies] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
+  const [filter, setFilter] = useState('');
 
   useEffect(() => {
     setIsLoading(true);
@@ -31,6 +32,14 @@ const Movies = () => {
     <>
       <div className="popular">
         <h1>Popular Movies</h1>
+        <input
+          type="number"
+          min="2010"
+          max="2022"
+          name="filterYear"
+          id="filterYear"
+          onChange={(ev) => setFilter(ev)}
+        />
       </div>
       <div className="movieGallery">
         {movies ? isLoading ? <Loading /> : <Gallery item={movies} /> : <Error />}
