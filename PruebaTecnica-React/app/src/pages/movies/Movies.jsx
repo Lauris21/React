@@ -42,8 +42,8 @@ const Movies = () => {
           type="number"
           min="2010"
           max="2022"
-          name="filterYear"
-          id="filterYear"
+          name="filterYearMovie"
+          id="filterYearMovie"
           onChange={(ev) => setFilter(ev.target.value)}
         />
       </div>
