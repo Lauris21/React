@@ -7,7 +7,7 @@ import Image from '../../components/Image';
 const Home = () => {
   return (
     <>
-      <h1>Popular Titles</h1>
+      <h1 className="popular">Popular Titles</h1>
       <div className="divHome">
         <div>
           <section>

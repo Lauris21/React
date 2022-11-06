@@ -9,10 +9,10 @@ const dataSort = (a, b) => {
 
 export const filtererdData = (list, word) => {
   const filtered = list.filter((item) => item.programType === word);
-  filtered.filter((item) => item.releaseYear >= 2010);
+  const filtYear = filtered.filter((item) => item.releaseYear >= 2010);
   const maxData = [];
   for (let i = 0; i < 20; i++) {
-    maxData.push(filtered[i]);
+    maxData.push(filtYear[i]);
   }
   return maxData.sort(dataSort);
 };

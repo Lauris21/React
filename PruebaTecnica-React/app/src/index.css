@@ -7,10 +7,13 @@
     color: rgb(246, 246, 246);
     font-family: 'Nunito Sans', sans-serif;
 }
-
+ #root {
+    height: 100vh;
+    width: 100vw;
+ }
 main {
     background-color: rgb(246, 246, 246);
-    min-height: 71vh;
+    min-height: 700px;
 }
 
 a {
@@ -26,7 +29,7 @@ li {
 .popular {
     background: rgb(0,0,0);
     background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(46,45,45,1) 21%, rgba(61,61,60,1) 43%, rgba(65,65,64,1) 63%, rgba(45,45,44,1) 100%);
-    height: 6vh;
+    height: 7vh;
     display: flex;
     place-items: center;
     padding: 0rem 7rem;
@@ -35,7 +38,7 @@ li {
     justify-content: space-between;
 }
 
-.popular > h1 {
+h1 {
     font-size: 1.7rem;
 }
 
@@ -50,4 +53,11 @@ p {
 
 .error {
     color: black;
+}
+
+@media screen and (max-width:810px){
+    main {
+        min-height: 646px;
+    }
+    
 }

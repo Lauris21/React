@@ -3,7 +3,7 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
     gap: 2rem 0;
-    height: 62vh;
+    min-height: 59vh;
 }
 
 .homeFigure {
@@ -37,4 +37,15 @@
 
 section > p {
     padding-top: 0.5rem;
+}
+
+@media screen and (max-width:800px){
+   .popular {
+       text-align: center;
+       padding: 0 3rem;
+    }
+    .divHome {
+        padding: 2.5rem 2rem;
+    }
+    
 }

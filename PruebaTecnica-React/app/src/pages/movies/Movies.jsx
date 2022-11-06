@@ -19,14 +19,20 @@ const Movies = () => {
     getData().then((res) => {
       if (res === false) {
         return setMovies(res);
-      } else {
+      } else if (filter === '') {
         setTimeout(() => {
           setMovies(filtererdData(res, 'movie'));
           setIsLoading(false);
         }, 2000);
+      } else {
+        setMovies(filtererdData(res, 'movie'));
+        setTimeout(() => {
+          setMovies(movies.filter((item) => item.releaseYear == filter));
+          setIsLoading(false);
+        }, 2000);
       }
     });
-  }, []);
+  }, [filter]);
 
   return (
     <>
@@ -38,11 +44,21 @@ const Movies = () => {
           max="2022"
           name="filterYear"
           id="filterYear"
-          onChange={(ev) => setFilter(ev)}
+          onChange={(ev) => setFilter(ev.target.value)}
         />
       </div>
       <div className="movieGallery">
-        {movies ? isLoading ? <Loading /> : <Gallery item={movies} /> : <Error />}
+        {movies === [] ? (
+          <p>No matches</p>
+        ) : movies ? (
+          isLoading ? (
+            <Loading />
+          ) : (
+            <Gallery item={movies} />
+          )
+        ) : (
+          <Error />
+        )}
       </div>
     </>
   );
