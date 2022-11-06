@@ -102,3 +102,8 @@ footer > div {
     }
 }
 
+@media screen and (max-width:1110px) {
+    footer {
+        height: 60vh;
+    }
+}
