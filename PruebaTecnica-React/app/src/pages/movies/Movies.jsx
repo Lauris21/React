@@ -20,16 +20,12 @@ const Movies = () => {
       if (res === false) {
         return setMovies(res);
       } else if (filter === '') {
-        setTimeout(() => {
-          setMovies(filtererdData(res, 'movie'));
-          setIsLoading(false);
-        }, 2000);
+        setMovies(filtererdData(res, 'movie'));
+        setIsLoading(false);
       } else {
         setMovies(filtererdData(res, 'movie'));
-        setTimeout(() => {
-          setMovies(movies.filter((item) => item.releaseYear == filter));
-          setIsLoading(false);
-        }, 2000);
+        setMovies(movies.filter((item) => item.releaseYear == filter));
+        setIsLoading(false);
       }
     });
   }, [filter]);

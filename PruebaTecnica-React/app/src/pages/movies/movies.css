@@ -2,8 +2,9 @@
     width: 10rem;
 }
 
-.movieGallery > figure > img {
+.movieGallery > figure > a > img {
     width: 10rem;
+    height: 15rem;
 }
 
 .movieGallery {

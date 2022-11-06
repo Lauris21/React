@@ -28,7 +28,7 @@ const Series = () => {
         setTimeout(() => {
           setSeries(series.filter((item) => item.releaseYear == filter));
           setIsLoading(false);
-        }, 2000);
+        }, 1500);
       }
     });
   }, [filter]);
@@ -47,7 +47,15 @@ const Series = () => {
         />
       </div>
       <div className="seriesGallery">
-        {series ? isLoading ? <Loading /> : <Gallery item={series} /> : <Error />}
+        {series ? (
+          isLoading ? (
+            <Loading />
+          ) : (
+            <Gallery item={series} section="series" />
+          )
+        ) : (
+          <Error />
+        )}
       </div>
     </>
   );

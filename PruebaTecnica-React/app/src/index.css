@@ -13,7 +13,6 @@
  }
 main {
     background-color: rgb(246, 246, 246);
-    min-height: 700px;
 }
 
 a {
@@ -55,9 +54,10 @@ p {
     color: black;
 }
 
-@media screen and (max-width:810px){
-    main {
-        min-height: 646px;
-    }
-    
+.loading > p {
+    color: black;
+}
+
+.error > p {
+    color: black;
 }
