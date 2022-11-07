@@ -10,6 +10,7 @@
 .detail {
     display: flex;
     flex-direction: column;
+    min-height: 45rem;
 
 }
 .detail > div {
@@ -23,6 +24,7 @@
     height: 2rem;
     font-size: 1.1rem;
     border-radius: 5px;
+    margin-bottom: 2rem;
 }
 
 .btnDetail:hover {

@@ -9,7 +9,8 @@ import Home from './pages/home/Home';
 import Movies from './pages/movies/Movies';
 import Series from './pages/series/Series';
 import NotFound from './components/notFound/NotFound';
-import Detail from './pages/detail/Detail';
+import DetailMovie from './pages/detail/DetailMovie';
+import DetailSeries from './pages/detail/DetailSeries';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
@@ -19,7 +20,8 @@ ReactDOM.createRoot(document.getElementById('root')).render(
           <Route index element={<Home />} />
           <Route path="/movies" element={<Movies />} />
           <Route path="/series" element={<Series />} />
-          <Route path="/:title" element={<Detail />} />
+          <Route path="/:title" element={<DetailMovie />} />
+          <Route path="/:title" element={<DetailSeries />} />
           <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>

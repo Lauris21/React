@@ -4,7 +4,7 @@ import { useParams, useNavigate } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import { getData } from '../../api/api';
 
-const Detail = () => {
+const DetailMovie = () => {
   const params = useParams();
   const { title } = params;
   const [filter, setFilter] = useState({});
@@ -14,6 +14,7 @@ const Detail = () => {
     getData().then((res) => {
       setFilter(res.filter((item) => item.title === title)[0]);
     });
+    console.log(title);
   }, [title]);
 
   return (
@@ -31,4 +32,4 @@ const Detail = () => {
     </div>
   );
 };
-export default Detail;
+export default DetailMovie;

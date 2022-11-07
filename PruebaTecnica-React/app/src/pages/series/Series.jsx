@@ -22,7 +22,7 @@ const Series = () => {
         setTimeout(() => {
           setSeries(filtererdData(res, 'series'));
           setIsLoading(false);
-        }, 2000);
+        }, 1500);
       } else {
         setSeries(filtererdData(res, 'series'));
         setTimeout(() => {
@@ -47,15 +47,7 @@ const Series = () => {
         />
       </div>
       <div className="seriesGallery">
-        {series ? (
-          isLoading ? (
-            <Loading />
-          ) : (
-            <Gallery item={series} section="series" />
-          )
-        ) : (
-          <Error />
-        )}
+        {series ? isLoading ? <Loading /> : <Gallery item={series} /> : <Error />}
       </div>
     </>
   );

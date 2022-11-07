@@ -4,7 +4,7 @@ import Image from '../image';
 import PopupDiv from '../popUP/Popup';
 import { Link } from 'react-router-dom';
 
-const Gallery = ({ item, section }) => {
+const Gallery = ({ item }) => {
   return (
     <>
       {item ? (
