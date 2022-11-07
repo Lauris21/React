@@ -10,6 +10,7 @@ figure > img:hover {
 
 figure > a > img {
     filter: opacity(1);
+    width: 10rem;
 }
 
 figure > a:hover {
@@ -20,7 +21,3 @@ figure > a:hover {
 .moviesGallery > figure {
     width: 10rem;
 } 
-
-.seriesGallery > figure {
-    width: 10rem;
-}
