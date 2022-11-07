@@ -1,10 +1,10 @@
-figure > img {
+.movieGallery > figure > img {
     height: 240px;
     filter: opacity(1);
     width: 10rem;
 }
 
-figure > img:hover {
+.movieGallery > figure > img:hover {
     filter: opacity(0.7);
     border: 0.5px solid white;
 }
@@ -15,6 +15,27 @@ figure :hover {
     border: 0.5px solid white;
 }
 
-.moviesGallery > figure {
+.seriesGallery > figure {
+    width: 10rem;
+} 
+
+.seriesGallery > figure > img {
+    height: 240px;
+    filter: opacity(1);
+    width: 10rem;
+}
+
+.seriesGallery > figure > img:hover {
+    filter: opacity(0.7);
+    border: 0.5px solid white;
+}
+
+
+figure :hover {
+    filter: opacity(0.7);
+    border: 0.5px solid white;
+}
+
+.seriesGallery > figure {
     width: 10rem;
 } 

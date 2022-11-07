@@ -23,6 +23,7 @@
 .homeFigure > a > img {
     margin: auto;
     position: absolute;
+    border: none;
 }
 
 .homeFigure > a > h3 {
