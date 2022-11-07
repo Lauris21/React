@@ -2,17 +2,14 @@ import './gallery.css';
 
 import Image from '../image';
 import PopupDiv from '../popUP/Popup';
-import { Link } from 'react-router-dom';
 
-const Gallery = ({ item }) => {
+const Gallery = ({ item, param }) => {
   return (
     <>
       {item ? (
         item.map((elem) => (
           <figure key={elem.title}>
-            <Link to={`/${elem.title}`}>
-              <Image src={elem.images['Poster Art'].url} alt={elem.title} />
-            </Link>
+            <Image src={elem.images['Poster Art'].url} alt={elem.title} />
             <PopupDiv elem={elem} />
           </figure>
         ))

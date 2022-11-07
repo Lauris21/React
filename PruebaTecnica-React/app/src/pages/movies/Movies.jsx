@@ -50,7 +50,7 @@ const Movies = () => {
           isLoading ? (
             <Loading />
           ) : (
-            <Gallery item={movies} />
+            <Gallery item={movies} param="movies" />
           )
         ) : (
           <Error />
