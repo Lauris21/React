@@ -1,6 +1,7 @@
 figure > img {
-    filter: opacity(1);
     height: 240px;
+    filter: opacity(1);
+    width: 10rem;
 }
 
 figure > img:hover {
@@ -8,12 +9,8 @@ figure > img:hover {
     border: 0.5px solid white;
 }
 
-figure > a > img {
-    filter: opacity(1);
-    width: 10rem;
-}
 
-figure > a:hover {
+figure :hover {
     filter: opacity(0.7);
     border: 0.5px solid white;
 }
