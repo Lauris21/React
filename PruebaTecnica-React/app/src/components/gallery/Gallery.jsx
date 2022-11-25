@@ -8,7 +8,7 @@ const Gallery = ({ item, param }) => {
     <>
       {item ? (
         item.map((elem) => (
-          <figure key={elem.title}>
+          <figure key={elem.title} className="galleryfigure">
             <Image src={elem.images['Poster Art'].url} alt={elem.title} />
             <PopupDiv elem={elem} />
           </figure>
