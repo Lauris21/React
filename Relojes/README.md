@@ -1,6 +1,6 @@
 # PROYECTO
 
-Creado con vite utilizando las librerías eslint y prettier.
+Creado con vite utilizando las librerías eslint y prettier. Para darle estilo he hecho uso de Chakra.
 
 ## Ejecutar
 
