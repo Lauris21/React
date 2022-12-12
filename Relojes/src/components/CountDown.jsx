@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import BoxFlex from './BoxFlex';
 import MiniBox from './MiniBox';
-import calendary from '../../public/calendar.svg';
+import calendary from '../public/calendar.svg';
 import { Image, Box } from '@chakra-ui/react';
 import TextUI from './Text';
 

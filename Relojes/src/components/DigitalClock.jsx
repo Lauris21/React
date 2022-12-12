@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import clock from '../../public/clock-svgrepo-com.svg';
-import { Image, Text } from '@chakra-ui/react';
+import clock from '../public/clock-svgrepo-com.svg';
+import { Image } from '@chakra-ui/react';
 import BoxFlex from './BoxFlex';
 import TextUI from './Text';
 
